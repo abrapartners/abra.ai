@@ -4,7 +4,7 @@
  *
  * @title Set Variable
  * @category Storage
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {string} type - Pick between: user, session, temp, bot
  * @param {string} name - The name of the variable
  * @param {any} value - Set the value of the variable.

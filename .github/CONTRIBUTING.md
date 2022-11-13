@@ -24,7 +24,7 @@ If a maintainer asks you to "rebase" your PR, they're saying that a lot of code 
 
 ### Why become a contributor :robot:?
 
-We all have our motivation for doing what we do. For the core team at Botpress, it's our mission; **Making machines understand humans.** Building more intuitive applications using language is why we write lines of code in botpress/botpress.
+We all have our motivation for doing what we do. For the core team at Abra.AI, it's our mission; **Making machines understand humans.** Building more intuitive applications using language is why we write lines of code in botpress/botpress.
 
 What's your motivation?
 
@@ -106,7 +106,7 @@ Please follow the [Conventional Commits](https://conventionalcommits.org/) specs
 
 When filing an issue, make sure to answer these five questions:
 
-1. What version of Botpress are you using?
+1. What version of Abra.AI are you using?
 2. What did you do?
 3. What did you expect to see?
 4. What did you see instead?
@@ -114,9 +114,9 @@ When filing an issue, make sure to answer these five questions:
 
 ### Submitting Feature Requests
 
-If you find yourself wishing for a feature that doesn't exist in Botpress, you are probably not alone. There are bound to be others out there with similar needs. Many of the features that Botpress has today have been added because our users saw the need. Open an issue on our issues list on GitHub which describes the feature you would like to see, why you need it, and how it should work.
+If you find yourself wishing for a feature that doesn't exist in Abra.AI, you are probably not alone. There are bound to be others out there with similar needs. Many of the features that Botpress has today have been added because our users saw the need. Open an issue on our issues list on GitHub which describes the feature you would like to see, why you need it, and how it should work.
 
-However as Botpress has a great module system consider whether the feature you're requesting would be better as a module, rather than expanding the core platform.
+However as Abra.AI has a great module system consider whether the feature you're requesting would be better as a module, rather than expanding the core platform.
 
 ### Commits & Commit Messages
 
@@ -128,7 +128,7 @@ Pull requests are reviewed as and when the maintainers have the time, however, w
 
 ### Setting up Your Local Dev Environment
 
-If you are interested in contributing to Botpress, you will need to create a local development environment. These instructions were tested on macOS using iTerm for CLI.
+If you are interested in contributing to Abra.AI, you will need to create a local development environment. These instructions were tested on macOS using iTerm for CLI.
 
 These instructions assume a parent directory `bar` and we will be adding two child directories: `botpress` and `foobot`.
 
@@ -181,16 +181,20 @@ _Next Steps_
 
 - edit code in botpress
 - in: **botpress terminal window**
+
   ```shell
   # Ctl-C to end watch
   # Start botpress
   bar/botpress $ yarn start
   ```
+
 - in: **foobot terminal window**
+
   ```shell
   # Ctl-C to stop bot
   bar/foobot $ bp start
   ```
+
 - visit `localhost:3000` in a browser to confirm your change was implemented
 
 ### Community

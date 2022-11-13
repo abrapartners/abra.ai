@@ -16,7 +16,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
     menuText: 'Proactive Module',
     noInterface: true,
     fullName: 'Proactive Module',
-    homepage: 'https://botpress.com'
+    homepage: 'https://abra.partners'
   }
 }
 

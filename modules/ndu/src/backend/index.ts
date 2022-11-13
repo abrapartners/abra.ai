@@ -61,7 +61,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
     menuText: 'NDU',
     noInterface: true,
     fullName: 'NDU',
-    homepage: 'https://botpress.io'
+    homepage: 'https://abra.partners'
   }
 }
 

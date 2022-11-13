@@ -16,7 +16,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
     menuText: 'Custom Component',
     fullName: 'My Custom Component',
     noInterface: true, // This prevents your module from being displayed in the menu, since we only add custom components here
-    homepage: 'https://botpress.com'
+    homepage: 'https://abra.partners'
   }
 }
 

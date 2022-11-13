@@ -3,7 +3,7 @@
   "fullName": "Built-In",
   "version": "1.0.0",
   "status": "stable",
-  "description": "Provides the base elements that are recommended to run Botpress",
+  "description": "Provides the base elements that are recommended to run Abra.AI",
   "private": true,
   "main": "dist/backend/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "watch": "node ../../build/module-builder/bin/entry watch",
     "package": "node ../../build/module-builder/bin/entry package"
   },
-  "author": "Botpress Team",
+  "author": "Abra.AI Team",
   "license": "AGPL-3.0-only",
   "resolutions": {
     "fstream": ">=1.0.12",

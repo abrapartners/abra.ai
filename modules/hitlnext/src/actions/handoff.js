@@ -6,7 +6,7 @@ const axios = require('axios')
  * @title Handoff
  * @category hitlnext
  * @description Transfers control of the conversation to an agent
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  */
 const escalate = async (event, timeoutDelay) => {
   // The HITLNext module is not compatible with the Converse API since the

@@ -142,7 +142,7 @@ export class SdkApiRouter extends CustomRouter {
     )
 
     /**
-     * Creates a message signature, which can be used as proof that the message was created on Botpress backend
+     * Creates a message signature, which can be used as proof that the message was created on Abra.AI backend
      * You can call this method twice to verify the authenticity of a message
      *
      * @param message: The message to generate a signature for

@@ -9,8 +9,8 @@ export class RealTimePayload {
 
   /**
    * Creates a payload to be send to a unique visitor.
-   * A visitor is essentially a unique socket user surfing a Botpress-enabled interface.
-   * Interfaces include the Botpress Dashboard and the Botpress Webchat.
+   * A visitor is essentially a unique socket user surfing a Abra.AI-enabled interface.
+   * Interfaces include the Abra.AI Dashboard and the Abra.AI Webchat.
    * @param visitorId The ID of the visitor, on the Webchat this is the channel-web `userId`
    */
   static forVisitor(visitorId: string, eventName: string, payload: any): RealTimePayload {

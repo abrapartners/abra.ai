@@ -5,6 +5,7 @@ import _ from 'lodash'
 import en from '../translations/en.json'
 import es from '../translations/es.json'
 import fr from '../translations/fr.json'
+import tr from '../translations/tr.json'
 
 import api from './api'
 import Database from './db'
@@ -33,11 +34,11 @@ const entryPoint: sdk.ModuleEntryPoint = {
   onServerStarted,
   onServerReady,
   onModuleUnmount,
-  translations: { en, fr, es },
+  translations: { en, fr, es, tr },
   definition: {
     name: 'analytics',
     fullName: 'Analytics',
-    homepage: 'https://botpress.com',
+    homepage: 'https://abra.partners',
     menuIcon: 'timeline-line-chart',
     menuText: 'Analytics',
     workspaceApp: { bots: true }

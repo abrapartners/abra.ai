@@ -3,6 +3,7 @@ import * as sdk from 'botpress/sdk'
 import en from '../translations/en.json'
 import es from '../translations/es.json'
 import fr from '../translations/fr.json'
+import tr from '../translations/tr.json'
 import { FlaggedEvent, FLAG_REASON } from '../types'
 
 import initApi from './api'
@@ -46,14 +47,14 @@ const onModuleUnmount = async (_bp: typeof sdk) => {
 const entryPoint: sdk.ModuleEntryPoint = {
   onServerReady,
   onModuleUnmount,
-  translations: { en, fr, es },
+  translations: { en, fr, es, tr },
   definition: {
     experimental: false,
     name: 'misunderstood',
     menuIcon: 'icon.svg',
     menuText: 'Misunderstood',
     fullName: 'Misunderstood Phrases',
-    homepage: 'https://botpress.com',
+    homepage: 'https://abra.partners',
     workspaceApp: { bots: true }
   }
 }

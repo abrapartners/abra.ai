@@ -1,9 +1,9 @@
 {
   "$schema": "../../bot.config.schema.json",
-  "description": "A bot with a simple workflow made for learning Botpress.",
+  "description": "A bot with a simple workflow made for learning Abra.AI.",
   "active": true,
   "version": "12.26.3",
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0",
   "imports": {
     "modules": [],

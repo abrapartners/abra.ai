@@ -19,7 +19,7 @@ const DownloadLinks: FC<{ version: string; dockerUrl: string }> = props => {
 
   return (
     <div className={style.downloads}>
-      Download binary
+      {/* Download binary
       <hr />
       <a href={`https://s3.amazonaws.com/botpress-binaries/botpress-${version}-darwin-x64.zip`} target="_blank">
         <img src={mac} /> Mac
@@ -33,11 +33,11 @@ const DownloadLinks: FC<{ version: string; dockerUrl: string }> = props => {
         <img src={linux} /> Linux
       </a>
       <br />
-      <br />
+      <br /> */}
       Docker Image
       <hr />
       <a href={props.dockerUrl || 'https://hub.docker.com/r/botpress/server'} target="_blank">
-        <code>botpress/server:{version}</code>
+        <code>abrapartners/core:{version}</code>
       </a>
     </div>
   )

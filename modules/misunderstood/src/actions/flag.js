@@ -4,7 +4,7 @@ const axios = require('axios')
  *
  * @title Flags message as misunderstood
  * @category Misunderstood Phrases
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  */
 const flag = async () => {
   const { language, detectedLanguage } = event.nlu

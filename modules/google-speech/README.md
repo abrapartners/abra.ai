@@ -24,9 +24,9 @@ Google Speech requires you to have a Google Cloud project to setup your bot.
   - `projectId (Optional)`: The project ID on which the Google APIs are enabled.
   - `confidenceThreshold`: The confidence threshold used to discard text alternatives when using speech-to-text. **Must be a floating number between 0 and 1**
   - `maxAudioDuration`: The maximal duration (in seconds) allowed for an audio file when using speech-to-text.**Must be a number between 0 and 60**
-  - `languageMapping`: The mapping between Botpress languages and languages in BCP-47 format recognized by Google.
+  - `languageMapping`: The mapping between Abra.AI languages and languages in BCP-47 format recognized by Google.
   - `voiceSelection`: The type of voice the text-to-speech audio file should have. One of: "MALE", "FEMALE", "NEUTRAL".
-- Restart Botpress Server to reload the configuration
+- Restart Abra.AI Server to reload the configuration
 
 ## Module Limitations
 

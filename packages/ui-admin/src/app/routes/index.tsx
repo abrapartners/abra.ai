@@ -34,7 +34,7 @@ import PrivateRoute from './PrivateRoute'
 import SegmentHandler from './SegmentHandler'
 
 const setupBranding = () => {
-  window.document.title = window.APP_NAME || 'Botpress Admin Panel'
+  window.document.title = window.APP_NAME || 'Abra.AI Admin Panel'
 
   if (window.APP_FAVICON) {
     const link = document.querySelector('link[rel="icon"]')
@@ -96,9 +96,9 @@ export const makeMainRoutes = () => {
                 <Route path="/checklist" component={Checklist} />
                 <Route path="/latestReleases" component={LatestReleases} />
                 <Route path="/server/monitoring" component={Monitoring} />
-                <Route path="/server/version" component={Versioning} />
+                {/* <Route path="/server/version" component={Versioning} /> */}
                 <Route path="/server/languages" component={Languages} />
-                <Route path="/server/license" component={LicenseStatus} />
+                {/* <Route path="/server/license" component={LicenseStatus} /> */}
                 <Route path="/server/alerting" component={Alerting} />
                 <Route path="/channels" component={Channels} />
                 <Route path="/workspace/:workspaceId?/bots" component={Bots} />

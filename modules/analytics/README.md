@@ -1,6 +1,6 @@
 # @botpress/analytics
 
-Analytics for Botpress provides an interface to view graphs and data of your chatbot typical usage. By using this module, you can have a look to your total users, retention, daily active users, busy hours and a lot more...
+Analytics for Abra.AI provides an interface to view graphs and data of your chatbot typical usage. By using this module, you can have a look to your total users, retention, daily active users, busy hours and a lot more...
 
 ## Usage
 

@@ -48,7 +48,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
   definition: {
     name: 'google-speech',
     fullName: 'GoogleSpeech',
-    homepage: 'https://botpress.com',
+    homepage: 'https://abra.partners',
     noInterface: true,
     plugins: [],
     experimental: true

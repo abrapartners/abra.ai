@@ -192,7 +192,7 @@ export interface ModuleInfo {
   description?: string
   /** Archived modules must be unpacked before information is available */
   archived?: boolean
-  /** The location of the module as listed in botpress config */
+  /** The location of the module as listed in Abra.AI config */
   location: string
   /** The complete location of the module */
   fullPath: string

@@ -1,6 +1,6 @@
 # Examples module
 
-Here you will find an example module for botpress.
+Here you will find an example module for Abra.AI.
 
 ## Bot templates
 

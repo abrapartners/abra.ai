@@ -114,7 +114,7 @@ const Menu: FC<Props> = props => {
   return (
     <aside className={cx(style.sidebar, 'bp-sidebar')}>
       <a href="admin/" className={cx(style.logo, 'bp-logo')}>
-        <img width="19" src={logo} />
+        <img width="20" src={logo} />
       </a>
       <ul>
         <MenuItem

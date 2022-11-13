@@ -3,7 +3,7 @@ const axios = require('axios')
 /**
  * @title Call an external API
  * @category Tutorial
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  */
 const callApi = async () => {
   // Call the Github API and fetch the latest releases
@@ -16,7 +16,7 @@ const callApi = async () => {
   const releaseNotesUrl = mostRecentRelease.html_url
 
   // Display the latest version in logs
-  bp.logger.info(`Latest Botpress version is ${latestVersion}`)
+  bp.logger.info(`Latest Abra.AI version is ${latestVersion}`)
 
   // Prepare the message
   const message = {

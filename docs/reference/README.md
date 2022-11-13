@@ -1,20 +1,20 @@
-# Botpress SDK
+# Abra.AI SDK
 
-Botpress SDK allows you to create _Botpress Modules_ that extends the functionalities of the platform. Botpress SDK exposes all the major methods that a Module needs to interact with the core.
+Abra.AI SDK allows you to create _Botpress Modules_ that extends the functionalities of the platform. Abra.AI SDK exposes all the major methods that a Module needs to interact with the core.
 
-We made sure that the SDK is always up-to-date with the latest version of Botpress. It will always match the current version of your Botpress installation.
+We made sure that the SDK is always up-to-date with the latest version of Botpress. It will always match the current version of your Abra.AI installation.
 
 > **Tip**: For step-by-step instructions in how to install a Module or create one, see our _Developer's Guide_ [Module Section](https://botpress.com/docs/modules/install/).
 
-## How to use Botpress SDK
+## How to use Abra.AI SDK
 
-To use the SDK in your Module, it has to be recognized by Botpress.
+To use the SDK in your Module, it has to be recognized by Abra.AI.
 
 > **Tip**: Before continuing, please refer to the [Module Building](https://botpress.com/docs/modules/build/) section of our Developer's Guide to learn how to build your Module.
 
 ### Definition File
 
-The Botpress SDK definition file (`botpress.d.ts`) can be either copied manually from `src/bp/sdk/botpress.d.ts` or copied automatically while running the `yarn build:modules` in your project root.
+The Abra.AI SDK definition file (`botpress.d.ts`) can be either copied manually from `src/bp/sdk/botpress.d.ts` or copied automatically while running the `yarn build:modules` in your project root.
 
 Once you have the definition file ready, you can import it with `import sdk from 'botpress/sdk'` and use it in your code.
 
@@ -53,4 +53,4 @@ From the project root, run `yarn build:reference`. This will copy the static ass
 
 ## Contribute
 
-Our goal is to make sure that Botpress SDK is always well documented. If you find things you can improve or clarify, feel free to contribute to the [Botpress SDK definition file](https://github.com/botpress/botpress/blob/master/src/bp/sdk/botpress.d.ts).
+Our goal is to make sure that Abra.AI SDK is always well documented. If you find things you can improve or clarify, feel free to contribute to the [Abra.AI SDK definition file](https://github.com/botpress/botpress/blob/master/src/bp/sdk/botpress.d.ts).

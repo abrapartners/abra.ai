@@ -12,7 +12,7 @@
   {
     "id": "builtin_text-aJG2tU",
     "formData": {
-      "text$en": "👋 {{session.contactForm.name}}, I'm glad you prefer Botpress over all the other platforms!",
+      "text$en": "👋 {{session.contactForm.name}}, I'm glad you prefer Abra.AI over all the other platforms!",
       "typing$en": true
     },
     "createdBy": "admin",

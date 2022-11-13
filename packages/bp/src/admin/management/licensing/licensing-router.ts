@@ -94,7 +94,7 @@ class LicensingRouter extends CustomAdminRouter {
       '/config/enablePro',
       this.asyncMiddleware(async (req, res) => {
         if (process.IS_PRO_ENABLED) {
-          return res.send('Botpress Pro is already enabled.')
+          return res.send('Abra.AI Pro is already enabled.')
         }
 
         await this.configProvider.mergeBotpressConfig({ pro: { enabled: true } })

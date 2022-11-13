@@ -5,6 +5,7 @@ import path from 'path'
 
 import en from '../translations/en.json'
 import fr from '../translations/fr.json'
+import tr from '../translations/tr.json'
 
 import api from './api'
 import {
@@ -91,7 +92,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
   onServerStarted,
   onServerReady,
   onModuleUnmount,
-  translations: { en, fr },
+  translations: { en, fr, tr },
   definition: {
     name: 'libraries',
     menuIcon: 'book',
@@ -101,7 +102,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
     workspaceApp: { bots: false, global: true },
     experimental: true,
     fullName: 'Libraries',
-    homepage: 'https://botpress.com'
+    homepage: 'https://abra.partners'
   }
 }
 

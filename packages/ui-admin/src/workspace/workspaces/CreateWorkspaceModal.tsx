@@ -142,7 +142,7 @@ const CreateWorkspaceModal: FC<Props> = props => {
                 selectedValue={pipelineId}
               >
                 <Radio id="radio-no-pipeline" label="No pipeline [production]" value="none" />
-                <Radio id="radio-bp-pipeline" label="Botpress default [dev, staging, production]" value="botpress" />
+                <Radio id="radio-bp-pipeline" label="Abra.AI default [dev, staging, production]" value="botpress" />
               </RadioGroup>
             </Fragment>
           )}

@@ -258,12 +258,12 @@ export class ConfigProvider {
   public async getBrandingConfig(appName: 'admin' | 'studio') {
     const defaultConfig = {
       admin: {
-        title: 'Botpress Admin Panel',
+        title: 'Abra.AI Admin Panel',
         favicon: 'assets/admin/ui/public/favicon.ico',
         customCss: ''
       },
       studio: {
-        title: 'Botpress Studio',
+        title: 'Abra.AI Studio',
         favicon: 'assets/studio/ui/public/img/favicon.png',
         customCss: ''
       }

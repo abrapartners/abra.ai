@@ -12,7 +12,7 @@
     const messages = [
       { ...baseMessage, text: `Looks like you hit the NASA api limit for your IP address! To fix this : ` },
       { ...baseMessage, text: `- Get a free api key using their form on https://api.nasa.gov/.` },
-      { ...baseMessage, text: `- Go to the Botpress Code Editor open the get-rover-images.js action.` },
+      { ...baseMessage, text: `- Go to the Abra.AI Code Editor open the get-rover-images.js action.` },
       { ...baseMessage, text: `- On the fifth line, Replace DEMO_KEY with your key provided by NASA.` }
     ]
 
@@ -65,7 +65,7 @@
    * Fetches rover images from public Nasa api
    * @title Fetch Mars Rover Images
    * @category Nasa
-   * @author Botpress
+   * @author Abra.AI
    * @param {string} earthDate - date on earth
    */
   const getRoverImages = async earthDate => {

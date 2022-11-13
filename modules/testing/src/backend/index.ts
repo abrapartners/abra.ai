@@ -2,6 +2,7 @@ import * as sdk from 'botpress/sdk'
 
 import en from '../translations/en.json'
 import fr from '../translations/fr.json'
+import tr from '../translations/tr.json'
 
 import api from './api'
 import { Testing } from './testing'
@@ -30,14 +31,14 @@ const entryPoint: sdk.ModuleEntryPoint = {
   onModuleUnmount,
   onBotMount,
   onBotUnmount,
-  translations: { en, fr },
+  translations: { en, fr, tr },
   definition: {
     name: 'testing',
     menuIcon: 'record',
     menuText: 'Testing',
     noInterface: false,
     fullName: 'Testing',
-    homepage: 'https://botpress.com'
+    homepage: 'https://abra.partners'
   }
 }
 

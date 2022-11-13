@@ -2,7 +2,7 @@
  * Increment the number of conversations
  * @title Increment number of conversations
  * @category Storage
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {string} output - The state variable to output the count to
  */
 const incrementNumberOfConversations = async output => {

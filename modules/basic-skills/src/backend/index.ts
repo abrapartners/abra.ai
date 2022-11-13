@@ -5,6 +5,7 @@ import _ from 'lodash'
 import en from '../translations/en.json'
 import es from '../translations/es.json'
 import fr from '../translations/fr.json'
+import tr from '../translations/tr.json'
 
 import apiCall from './callApi'
 import choice from './choice'
@@ -49,11 +50,11 @@ const skillsToRegister: sdk.Skill[] = [
 const entryPoint: sdk.ModuleEntryPoint = {
   onServerReady,
   onModuleUnmount,
-  translations: { en, fr, es },
+  translations: { en, fr, es, tr },
   definition: {
     name: 'basic-skills',
     fullName: 'Basic Skills',
-    homepage: 'https://botpress.com',
+    homepage: 'https://abra.partners',
     noInterface: true,
     plugins: [],
     moduleView: { stretched: true }

@@ -2,7 +2,7 @@
  * Get number of conversations
  * @title Get number of conversations
  * @category Storage
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {string} output - The state variable to output the count to
  */
 const getNumberOfConversations = async output => {

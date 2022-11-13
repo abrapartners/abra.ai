@@ -6,7 +6,7 @@
   "description": "Provides the tooling necessary to easily install libraries that can be used by other scripts",
   "private": true,
   "main": "dist/backend/index.js",
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0-only",
   "scripts": {
     "build": "node ../../build/module-builder/bin/entry build",

@@ -36,8 +36,8 @@ const Container = props => {
       superAdmin={true}
       helpText={
         <span>
-          This is a checklist of recommended settings when running Botpress in production.
-          <br /> Environment variables are displayed in <Tag>gray</Tag> and values from the botpress.config.json config
+          This is a checklist of recommended settings when running Abra.AI in production.
+          <br /> Environment variables are displayed in <Tag>gray</Tag> and values from the abra.ai.config.json config
           file in <Tag intent={Intent.PRIMARY}>blue</Tag>
           <br />
           <br />
@@ -100,8 +100,8 @@ export const Checklist: FC<Props> = props => {
     <Container>
       <div className={style.checklist}>
         <Item
-          title="Enable Botpress Professional"
-          docs="https://botpress.com/docs/pro/about-pro/"
+          title="Enable Abra.AI Professional"
+          docs="https://abra.partners/docs/pro/about-pro/"
           status={
             getEnv('BP_CONFIG_PRO_ENABLED') === 'true' || getConfig('pro.enabled') === 'true' ? 'success' : 'warning'
           }
@@ -112,22 +112,22 @@ export const Checklist: FC<Props> = props => {
             { type: 'config', key: 'pro.licenseKey', value: getConfig('pro.licenseKey') }
           ]}
         >
-          Botpress Pro provides multiple features ready to be used in an enterprise-grade solution.
+          Abra.AI Pro provides multiple features ready to be used in an enterprise-grade solution.
         </Item>
 
         <Item
           title="Use a Postgres database"
-          docs="https://botpress.com/docs/building-chatbots/developers/database#how-to-switch-from-sqlite-to-postgressql"
+          docs="https://abra.partners/docs/building-chatbots/developers/database#how-to-switch-from-sqlite-to-postgressql"
           status={getEnv('DATABASE_URL').startsWith('postgres') ? 'success' : 'warning'}
           source={[{ type: 'env', key: 'DATABASE_URL', value: getEnv('DATABASE_URL') }]}
         >
-          By default, Botpress uses an SQLite database, which is not recommended in a production environment. Postgres
-          is more resilient and allows to run Botpress in cluster mode (using multiple servers to handle the load).
+          By default, Abra.AI uses an SQLite database, which is not recommended in a production environment. Postgres
+          is more resilient and allows to run Abra.AI in cluster mode (using multiple servers to handle the load).
         </Item>
 
         <Item
           title="Use the database BPFS storage"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#use-the-database-bpfs-storage"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#use-the-database-bpfs-storage"
           status={getEnv('BPFS_STORAGE') === 'database' ? 'success' : 'warning'}
           source={[{ type: 'env', key: 'BPFS_STORAGE', value: getEnv('BPFS_STORAGE') }]}
         >
@@ -137,12 +137,12 @@ export const Checklist: FC<Props> = props => {
         </Item>
 
         <Item
-          title="Run Botpress in production mode"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#run-botpress-in-production-mode"
+          title="Run Abra.AI in production mode"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#run-botpress-in-production-mode"
           status={getEnv('BP_PRODUCTION') === 'true' ? 'success' : 'warning'}
           source={[{ type: 'env', key: 'BP_PRODUCTION', value: getEnv('BP_PRODUCTION') }]}
         >
-          When you run Botpress in production, these changes happens:
+          When you run Abra.AI in production, these changes happens:
           <ul>
             <li>Hide stack traces when error occurs</li>
             <li>Hides debug logs and logging of standard errors to optimize speed</li>
@@ -153,7 +153,7 @@ export const Checklist: FC<Props> = props => {
 
         <Item
           title="Configure the external server URL"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#configure-the-external-server-url"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#configure-the-external-server-url"
           status={isSet(getEnv('EXTERNAL_URL')) || isSet(getConfig('httpServer.externalUrl')) ? 'success' : 'warning'}
           source={[
             { type: 'env', key: 'EXTERNAL_URL', value: getEnv('EXTERNAL_URL') },
@@ -162,7 +162,7 @@ export const Checklist: FC<Props> = props => {
         >
           <span>
             This may cause multiple issues in production, like resources not displaying correctly or links not working.
-            When it is not set, it defaults to http://localhost:3000. When using Botpress Professional, this value is
+            When it is not set, it defaults to http://localhost:3000. When using Abra.AI Professional, this value is
             also used to validate your license.
           </span>
         </Item>
@@ -176,9 +176,9 @@ export const Checklist: FC<Props> = props => {
             { type: 'env', key: 'BP_REDIS_SCOPE', value: getEnv('BP_REDIS_SCOPE') }
           ]}
         >
-          Redis allows you to run multiple Botpress servers, all using the same data. Only 'REDIS_URL' and
+          Redis allows you to run multiple Abra.AI servers, all using the same data. Only 'REDIS_URL' and
           'CLUSTER_ENABLED' are required for Redis to work properly. Setting a Redis scope allows you to run multiple
-          Botpress clusters (e.g. staging and production) on the same Redis cluster without impacting one another (not
+          Abra.AI clusters (e.g. staging and production) on the same Redis cluster without impacting one another (not
           recommended). Simply re-use the same URL for Redis and set the 'BP_REDIS_SCOPE' environment variable to prod
           on your production instance and staging on your staging environment.
         </Item>
@@ -195,13 +195,13 @@ export const Checklist: FC<Props> = props => {
             { type: 'config', key: 'httpServer.cors.origin', value: getConfig('httpServer.cors.origin') }
           ]}
         >
-          By default, Botpress allows any origin to reach the server. You can either disable CORS completely (set the
+          By default, Abra.AI allows any origin to reach the server. You can either disable CORS completely (set the
           configuration to false), or set an allowed origin
         </Item>
 
         <Item
           title="Enable Cookie storage for the JWT Token"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#enable-cookie-storage-for-the-jwt-token"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#enable-cookie-storage-for-the-jwt-token"
           status={getConfig('jwtToken.useCookieStorage') === 'true' ? 'success' : 'warning'}
           source={[
             { type: 'config', key: 'jwtToken.useCookieStorage', value: getConfig('jwtToken.useCookieStorage') },
@@ -215,28 +215,28 @@ export const Checklist: FC<Props> = props => {
 
         <Item
           title="Host your own language server"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#host-your-own-language-server"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#host-your-own-language-server"
           status={languageEndpoint.includes('botpress.io') ? 'warning' : 'success'}
           source={[{ type: 'config', key: 'nlu.json: languageSources', value: languageEndpoint }]}
         >
-          The default language server configured with Botpress is a public server, which has request limitations and
+          The default language server configured with Abra.AI is a public server, which has request limitations and
           should not be relied upon when serving customers. Please follow the instructions in our documentation to setup
           your own, then change the server URL in the configuration file <strong>global/data/config/nlu.json</strong>
         </Item>
 
         <Item
           title="Securing your server with HTTPS"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#securing-your-server-with-https"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#securing-your-server-with-https"
           status={protocol === 'https' ? 'success' : 'warning'}
           source={[{ key: 'Detected protocol', value: protocol }]}
         >
-          Botpress doesn't handle certificates and https headers directly. Those should be handled by a NGINX server in
+          Abra.AI doesn't handle certificates and https headers directly. Those should be handled by a NGINX server in
           front of it. We have a recommended NGINX configuration sample in the documentation.
         </Item>
 
         <Item
           title="Enable audit trail"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#enable-audit-trail"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#enable-audit-trail"
           status={hasAuditTrail ? 'success' : 'warning'}
         >
           You can enable a special debug scope that tracks every requests sent to the server (and the corresponding
@@ -246,7 +246,7 @@ export const Checklist: FC<Props> = props => {
 
         <Item
           title="Enable Sticky Sessions"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#enable-sticky-sessions"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#enable-sticky-sessions"
           status="none"
           source={[
             { type: 'config', key: 'httpServer.socketTransports', value: getConfig('httpServer.socketTransports') }
@@ -268,28 +268,28 @@ export const Checklist: FC<Props> = props => {
 
         <Item
           title="Output logs to the filesystem"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#output-logs-to-the-filesystem"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#output-logs-to-the-filesystem"
           status={getConfig('logs.fileOutput.enabled') === 'true' ? 'success' : 'none'}
           source={[{ type: 'config', key: 'logs.fileOutput.enabled', value: getConfig('logs.fileOutput.enabled') }]}
         >
-          By default, Botpress does some minimal logging to the database. It is recommended to enable the log output on
+          By default, Abra.AI does some minimal logging to the database. It is recommended to enable the log output on
           the file system to keep traces
         </Item>
 
         <Item
-          title="Change Botpress base path"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#change-botpress-base-path"
+          title="Change Abra.AI base path"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#change-botpress-base-path"
           status={isSet(getLive('ROOT_PATH')) ? 'success' : 'none'}
           source={[{ key: 'Current base path', value: !isSet(getLive('ROOT_PATH')) ? '/' : getLive('ROOT_PATH') }]}
         >
           By default, all requests are handled at the top level of the external url. It is possible to change that path
-          (for example to use http://localhost:3000/botpress). You can do that by updating your server's EXTERNAL_URL
+          (for example to use http://localhost:3000/abra-ai). You can do that by updating your server's EXTERNAL_URL
           and adding the suffix at the end.
         </Item>
 
         <Item
           title="Create custom roles and review permissions"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#create-custom-roles-and-review-permissions"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#create-custom-roles-and-review-permissions"
           status="none"
         >
           There is a default set of role and permissions when you create a workspace. It is recommended to review and
@@ -298,16 +298,16 @@ export const Checklist: FC<Props> = props => {
 
         <Item
           title="Enable other authentication mechanism"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#enable-other-authentication-mechanism"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#enable-other-authentication-mechanism"
           status="none"
         >
           The default authentication method is a username/password, but you can enable additional authentication
-          strategies to access Botpress. We currently support LDAP, SAML and OAUTH2.
+          strategies to access Abra.AI. We currently support LDAP, SAML and OAUTH2.
         </Item>
 
         <Item
           title="Configure your Reverse Proxy and Load Balancing"
-          docs="https://botpress.com/docs/enterprise/server-and-cicd-management/production-checklist#configure-your-reverse-proxy-and-load-balancing"
+          docs="https://abra.partners/docs/enterprise/server-and-cicd-management/production-checklist#configure-your-reverse-proxy-and-load-balancing"
           status="none"
         >
           Check the documentation for more information

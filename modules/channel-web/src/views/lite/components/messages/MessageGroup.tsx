@@ -22,7 +22,7 @@ class MessageGroup extends React.Component<Props> {
 
   /**
    * @deprecated 12.0
-   * Here, we convert old format to the new format Botpress uses internally.
+   * Here, we convert old format to the new format Abra.AI uses internally.
    * - payload: all the data (raw, whatever) that is necessary to display the element
    * - type: extracted from payload for easy sorting
    */

@@ -5,7 +5,7 @@
  *
  * @title Reset Session
  * @category Storage
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  */
 const _ = require('lodash')
 const PROPERTIES_TO_KEEP = ['lastMessages', 'nluContexts', 'workflows']

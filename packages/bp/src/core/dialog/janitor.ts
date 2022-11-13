@@ -53,7 +53,7 @@ export class DialogJanitor extends Janitor {
    * Deletes the sessions that are expired and
    * reset the contexts of the sessions that are stale.
    * These actions are executed based on two expiries: session_expiry and context_expiry.
-   * NOTE: This task will run all botpress server nodes and we want only one node to process session timeouts,
+   * NOTE: This task will run all Abra.AI server nodes and we want only one node to process session timeouts,
    * thus usage of jobService.aquireLock().
    */
   async runTask(): Promise<void> {

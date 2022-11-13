@@ -4,6 +4,7 @@ import { Config } from '../config'
 import en from '../translations/en.json'
 import es from '../translations/es.json'
 import fr from '../translations/fr.json'
+import tr from '../translations/tr.json'
 
 import api from './api'
 import Editor from './editor'
@@ -20,14 +21,14 @@ const onModuleUnmount = async (bp: typeof sdk) => {
 const entryPoint: sdk.ModuleEntryPoint = {
   onServerReady,
   onModuleUnmount,
-  translations: { en, fr, es },
+  translations: { en, fr, es, tr },
   definition: {
     name: 'code-editor',
     menuIcon: 'code',
     menuText: 'Code Editor',
     noInterface: false,
     fullName: 'Code Editor',
-    homepage: 'https://botpress.com',
+    homepage: 'https://abra.partners',
     workspaceApp: { global: true }
   }
 }

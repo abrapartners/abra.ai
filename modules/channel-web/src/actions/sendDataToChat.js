@@ -2,7 +2,7 @@
  *
  * @title Sends serialized data to parent page on channel web
  * @category Channel Web
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {string} data - Serialized payload you want to send
  */
 const sendPostbackToParent = async data => {

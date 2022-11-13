@@ -4,6 +4,7 @@ import _ from 'lodash'
 
 import en from '../translations/en.json'
 import fr from '../translations/fr.json'
+import tr from '../translations/tr.json'
 
 import api from './api'
 import HitlDb from './db'
@@ -36,13 +37,13 @@ const entryPoint: sdk.ModuleEntryPoint = {
   onServerStarted,
   onServerReady,
   onModuleUnmount,
-  translations: { en, fr },
+  translations: { en, fr, tr },
   definition: {
     name: 'hitl',
     menuIcon: 'headset',
     menuText: 'HITL',
     fullName: 'Human In The Loop',
-    homepage: 'https://botpress.com'
+    homepage: 'https://abra.partners'
   }
 }
 

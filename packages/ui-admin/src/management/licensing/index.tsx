@@ -145,7 +145,7 @@ class LicenseStatus extends React.Component<Props> {
   renderProDisabled = () => {
     return (
       <PageContainer title="Server License">
-        <Callout title="Enable Botpress Professional">
+        <Callout title="Enable Abra.AI Professional">
           <p>
             {lang.tr('admin.license.status.useOfficial', {
               officialBinary: <strong>{lang.tr('admin.license.status.officialBinary')}</strong>

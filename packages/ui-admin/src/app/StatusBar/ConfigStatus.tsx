@@ -83,7 +83,7 @@ const ConfigStatus = () => {
         <Dialog.Body>
           {!isRestarting ? (
             <div>
-              Changes were made to the main Botpress configuration file. <br />
+              Changes were made to the main Abra.AI configuration file. <br />
               It is recommended to restart the server so they can take effect.
             </div>
           ) : (

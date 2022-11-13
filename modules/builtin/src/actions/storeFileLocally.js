@@ -41,10 +41,10 @@ const extractFilenameFromURL = url => {
 /**
  * Store File Locally
  *
- * _Note that the payload URL gets overridden with the one Botpress generates_
+ * _Note that the payload URL gets overridden with the one Abra.AI generates_
  * @title Store File Locally
  * @category Storage
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  */
 const storeFileLocally = async () => {
   let prop

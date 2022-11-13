@@ -13,7 +13,7 @@ export function getAppDataPath() {
 
   console.error(
     chalk.red(`Could not determine your HOME directory.
-Please set the environment variable "APP_DATA_PATH", then start Botpress`)
+Please set the environment variable "APP_DATA_PATH", then start Abra.AI`)
   )
   process.exit()
 }

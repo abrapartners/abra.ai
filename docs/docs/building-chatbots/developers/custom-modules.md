@@ -68,7 +68,6 @@ Once your module is ready to be deployed, from your module's directory, run `yar
 
 It is possible to override webpack parameters by adding a "webpack" property to the `package.json` file of your module. When you override a property, you also remove the default settings that we've set, so we recommend adding them back when overriding. For example, if you want to add an additional external file:
 
-
 **Example:**
 
 ```js
@@ -93,7 +92,6 @@ If you want to add special files to that folder (for example, copy automatically
 
 Your file needs to export an array named `copyFiles` containing the paths to move. It keeps the same folder structure, only changing `src` for `dist`.
 
-
 **Example:**
 
 `build.extras.js`
@@ -106,14 +104,13 @@ module.exports = {
 
 ## Module Entry Point
 
-This is where you define how Botpress will interact with your module. Your `index.ts` file must export an `sdk.ModuleEntryPoint` object. 
+This is where you define how Botpress will interact with your module. Your `index.ts` file must export an `sdk.ModuleEntryPoint` object.
 
 :::tip
-Keep your `index.ts` file small and split your module's logic in multiple files. 
+Keep your `index.ts` file small and split your module's logic in multiple files.
 :::
 
 We will explore each property below.
-
 
 **Example:**
 
@@ -131,7 +128,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
     menuIcon: 'some-icon',
     menuText: '',
     fullName: 'My Module',
-    homepage: 'https://botpress.com',
+    homepage: 'https://abra.partners',
     noInterface: false,
     plugins: []
   }
@@ -250,10 +247,9 @@ All modules are isolated and receive their own instance of `bp`.
 
 The Botpress SDK exposes a method to get the axios headers for a request. It will automatically set the base URL for the request and the required headers to communicate with the specific bot. This method is `bp.http.getAxiosConfigForBot('bot123'): Promise<AxiosRequestConfig>`.
 
-The method also accepts a second parameter with additional options. Right now, the only available option is `localUrl`. When set to true, the module will communicate with the local URL instead of the external one. 
+The method also accepts a second parameter with additional options. Right now, the only available option is `localUrl`. When set to true, the module will communicate with the local URL instead of the external one.
 
-
-**Example:** 
+**Example:**
 
 `bp.http.getAxiosConfigForBot('bot123', { localUrl: true })`
 
@@ -281,7 +277,7 @@ const result = await this.props.bp.axios.get('/mod/my-module/query')
 
 ### Creating an API Endpoint
 
-Modules are global, as is the API, so they must be able to manage multiple bots. 
+Modules are global, as is the API, so they must be able to manage multiple bots.
 
 :::tip
 Set up the API route in the `onServerReady` method of your entry point.

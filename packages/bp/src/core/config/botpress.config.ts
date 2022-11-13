@@ -88,7 +88,7 @@ export interface BotpressConfig {
      */
     port: number
     /**
-     * There are three external URLs that Botpress calls: https://license.botpress.io, https://duckling.botpress.io and https://lang-01.botpress.io
+     * There are three external URLs that Abra.AI calls: https://license.botpress.io, https://duckling.botpress.io and https://lang-01.botpress.io
      * If you are behind a corporate proxy, you can configure it below.
      * It is also possible to self-host Duckling, please check the documentation
      *
@@ -161,7 +161,7 @@ export interface BotpressConfig {
     }
     /**
      * Adds default headers to the server's responses
-     * @default {"X-Powered-By":"Botpress"}
+     * @default {"X-Powered-By":"Abra.AI"}
      */
     headers: { [name: string]: string }
   }
@@ -184,7 +184,7 @@ export interface BotpressConfig {
     /**
      * The license key for the server.  Optionally you can use the BP_LICENSE_KEY env variable.
      * You can purchase a license on https://botpress.com
-     * For usage with Botpress Pro/Enterprise.
+     * For usage with Abra.AI Pro/Enterprise.
      * @default paste your license key here
      */
     licenseKey: string
@@ -199,7 +199,7 @@ export interface BotpressConfig {
      * by using JWT tokens.
      *
      * In addition to authenticate the users, the JWT token can also contain arbitrary additional
-     * data about the user that you would like to make Botpress aware of.
+     * data about the user that you would like to make Abra.AI aware of.
      *
      * The identity of the user will be checked for every incoming message and the additional data in the JWT token
      * will be available in `event.credentials`.
@@ -212,7 +212,7 @@ export interface BotpressConfig {
       admin: {
         /**
          * Change the name displayed in the title bar on the admin panel
-         * @example "Botpress Admin Panel"
+         * @example "Abra.AI Admin Panel"
          */
         title?: string
         /**
@@ -229,7 +229,7 @@ export interface BotpressConfig {
       studio: {
         /**
          * Change the name displayed in the title bar on the studio
-         * @example "Botpress Studio"
+         * @example "Abra.AI Studio"
          */
         title?: string
         /**
@@ -246,12 +246,12 @@ export interface BotpressConfig {
     }
   }
   /**
-   * An array of e-mails of users which will have root access to Botpress (manage users, server settings)
+   * An array of e-mails of users which will have root access to Abra.AI (manage users, server settings)
    * @example: [admin@botpress.com]
    */
   superAdmins: UniqueUser[]
   /**
-   * When enabled, Botpress collects anonymous data about the bot's usage
+   * When enabled, Abra.AI collects anonymous data about the bot's usage
    * @default true
    */
   sendUsageStats: boolean
@@ -261,13 +261,13 @@ export interface BotpressConfig {
    */
   dataRetention?: DataRetentionConfig
   /**
-   * An array of categories in which a bot can be created in your botpress installation. Good for platform use-cases.
+   * An array of categories in which a bot can be created in your Abra.AI installation. Good for platform use-cases.
    * @example: ['customer service', 'e-commerce', 'etc']
    * @default []
    */
   botCategories: string[]
   /**
-   * When this option is enabled, Super Admins are able to reboot the Botpress Server via the Admin UI
+   * When this option is enabled, Super Admins are able to reboot the Abra.AI Server via the Admin UI
    * We recommend disabling this in a production environment, and if you use a process management tool like PM2
    *
    * @default true
@@ -287,7 +287,7 @@ export interface BotpressConfig {
   }
   jwtToken: {
     /**
-     * The duration for which the token granting access to manage Botpress will be active.
+     * The duration for which the token granting access to manage Abra.AI will be active.
      * @default 1h
      */
     duration: string
@@ -321,7 +321,7 @@ export interface BotpressConfig {
     [strategyId: string]: AuthStrategy
   }
   /**
-   * Displays the "Powered by Botpress" under the webchat.
+   * Displays the "Powered by Abra.AI" under the webchat.
    * Help us spread the word, enable this to show your support !
    * @default true
    */
@@ -333,8 +333,8 @@ export interface BotpressConfig {
    */
   noRepeatPolicy: boolean
   /**
-   * By adding this, you'll make possible to translate a bot in more languages than those supported by your botpress language server
-   * Warning: This means that Botpress NLU won't be working properly and you'll need to handle NLU on your own with a **beforeIncoming** Hook.
+   * By adding this, you'll make possible to translate a bot in more languages than those supported by your Abra.AI language server
+   * Warning: This means that Abra.AI NLU won't be working properly and you'll need to handle NLU on your own with a **beforeIncoming** Hook.
    * @example [{name: 'Swedish', code: 'sv'}]
    * @default []
    */
@@ -434,7 +434,7 @@ export interface AuthStrategy {
    */
   type: AuthStrategyType
   /**
-   * Set a label to display to users instead of the ID (ex: Botpress SSO)
+   * Set a label to display to users instead of the ID (ex: Abra.AI SSO)
    */
   label?: string
   /**
@@ -442,13 +442,13 @@ export interface AuthStrategy {
    */
   options: AuthStrategySaml | AuthStrategyLdap | AuthStrategyBasic | AuthStrategyOauth2 | undefined
   /**
-   * Maps the values returned by your provider to Botpress user parameters.
+   * Maps the values returned by your provider to Abra.AI user parameters.
    * @example fieldMapping: { email: 'emailAddress', fullName: 'givenName' }
    */
   fieldMapping?: FieldMapping
   /**
    * When enabled, users are able to register new accounts by themselves. For example, if you use the SAML strategy and this is enabled,
-   * any user able to sign in using your SAML provider will create automatically an account on Botpress.
+   * any user able to sign in using your SAML provider will create automatically an account on Abra.AI.
    * @default false
    */
   allowSelfSignup: boolean
@@ -554,7 +554,7 @@ export interface AuthStrategyOauth2 {
    */
   callbackURL: string
   /*
-   * Set this URL if your access token doesn't include user data. Botpress will query that URL to fetch user information
+   * Set this URL if your access token doesn't include user data. Abra.AI will query that URL to fetch user information
    * @example https://botpress.com/userinfo
    */
   userInfoURL?: string

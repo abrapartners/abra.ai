@@ -32,7 +32,7 @@ export default class InjectedComponent extends Component<Props, State> {
           <p>{this.state.error.message}</p>
         </div>
         <div className="panel-footer">
-          Developer? <a href="https://botpress.com/docs">click here</a> to see why this might happen
+          Developer? <a href="https://abra.partners/docs">click here</a> to see why this might happen
         </div>
       </div>
     )

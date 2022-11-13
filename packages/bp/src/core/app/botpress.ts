@@ -188,7 +188,7 @@ export class Botpress {
   private async maybeStartLocalSTAN() {
     if (!process.LOADED_MODULES['nlu']) {
       this.logger.warn(
-        'NLU server is disabled. Enable the NLU module and restart Botpress to start the standalone NLU server'
+        'NLU server is disabled. Enable the NLU module and restart Abra.AI to start the standalone NLU server'
       )
       return
     }
@@ -245,7 +245,7 @@ export class Botpress {
   }
 
   async checkJwtSecret() {
-    // @deprecated > 11: .jwtSecret has been renamed for appSecret. botpress > 11 jwtSecret will not be supported
+    // @deprecated > 11: .jwtSecret has been renamed for appSecret. Abra.AI > 11 jwtSecret will not be supported
     // @ts-ignore
     let appSecret = this.config.appSecret || this.config.jwtSecret
     if (!appSecret) {
@@ -269,7 +269,7 @@ export class Botpress {
 
     if (!process.IS_PRO_ENABLED && process.CLUSTER_ENABLED) {
       this._killServer(
-        'Redis is enabled in your Botpress configuration. To use Botpress in a cluster, please upgrade to Botpress Pro.'
+        'Redis is enabled in your Abra.AI configuration. To use Abra.AI in a cluster, please upgrade to Abra.AI Pro.'
       )
     }
 
@@ -277,7 +277,7 @@ export class Botpress {
       const workspaces = await this.workspaceService.getWorkspaces()
       if (workspaces.length > 1) {
         this._killServer(
-          'You have more than one workspace. To create unlimited workspaces, please upgrade to Botpress Pro.'
+          'You have more than one workspace. To create unlimited workspaces, please upgrade to Abra.AI Pro.'
         )
       }
 
@@ -286,7 +286,7 @@ export class Botpress {
           const pipeline = await this.workspaceService.getPipeline(workspace.id)
           if (pipeline && pipeline.length > 1) {
             this._killServer(
-              'Your pipeline has more than a single stage. To enable the pipeline feature, please upgrade to Botpress Pro.'
+              'Your pipeline has more than a single stage. To enable the pipeline feature, please upgrade to Abra.AI Pro.'
             )
           }
         }
@@ -297,18 +297,18 @@ export class Botpress {
     bots.forEach(bot => {
       if (!process.IS_PRO_ENABLED && bot.languages && bot.languages.length > 1) {
         this._killServer(
-          `A bot has more than a single language (${bot.id}). To enable the multilingual feature, please upgrade to Botpress Pro.`
+          `A bot has more than a single language (${bot.id}). To enable the multilingual feature, please upgrade to Abra.AI Pro.`
         )
       }
     })
     if (process.IS_PRO_ENABLED && !process.CLUSTER_ENABLED) {
       this.logger.warn(
-        'Botpress can be run on a cluster. If you want to do so, make sure Redis is running and properly configured in your environment variables'
+        'Abra.AI can be run on a cluster. If you want to do so, make sure Redis is running and properly configured in your environment variables'
       )
     }
     if (process.IS_PRO_ENABLED && dbType !== 'postgres' && process.CLUSTER_ENABLED) {
       this._killServer(
-        'Postgres is required to use Botpress in a cluster. Please migrate your database to Postgres and enable it in your Botpress configuration file.'
+        'Postgres is required to use Abra.AI in a cluster. Please migrate your database to Postgres and enable it in your Abra.AI configuration file.'
       )
     }
     if (process.CLUSTER_ENABLED && !process.env.REDIS_URL) {
@@ -316,7 +316,7 @@ export class Botpress {
     }
 
     if (!process.IS_PRO_ENABLED && this.config?.pro.branding) {
-      this.logger.warn('Botpress Pro must be enabled to use a custom theme and customize the branding.')
+      this.logger.warn('Abra.AI Pro must be enabled to use a custom theme and customize the branding.')
     }
   }
 

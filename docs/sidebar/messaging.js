@@ -11,7 +11,7 @@ module.exports = [
   {
     type: "category",
     collapsible: false,
-    label: "Botpress Webchat",
+    label: "Abra.AI Webchat",
     items: [
       {
         type: "category",

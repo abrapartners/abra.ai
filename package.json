@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "repository": "https://github.com/botpress/botpress.git",
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0",
   "private": true,
   "nlu": {

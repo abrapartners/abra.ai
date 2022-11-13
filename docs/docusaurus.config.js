@@ -2,7 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 const config = {
-  title: "Botpress Documentation",
+  title: "Abra.AI Documentation",
   tagline: "Making Machines Understand Humans",
   url: "https://botpress.com",
   baseUrl: process.env.BASE_URL || "/",
@@ -45,7 +45,7 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar-3', // Increment on change
-        content: `You can find the latest <b>Botpress Cloud</b> documentation through <a target="_blank" rel="noopener noreferrer" href="https://botpress.com/docs">this link</a>!`,
+        content: `You can find the latest <b>Abra.AI Cloud</b> documentation through <a target="_blank" rel="noopener noreferrer" href="https://botpress.com/docs">this link</a>!`,
         backgroundColor: "#3276ea",
         textColor: "#fff"
       },
@@ -77,7 +77,7 @@ const config = {
       navbar: {
         title: "Docs",
         logo: {
-          alt: "Botpress logo",
+          alt: "Abra.AI logo",
           src: "img/bp-logo-black.svg",
           srcDark: "img/bp-logo-white.png",
         },
@@ -129,7 +129,7 @@ const config = {
             position: "right",
             dropdownItemsAfter: [
               {
-                label: "Botpress Cloud",
+                label: "Abra.AI Cloud",
                 href: "https://botpress.com/docs"
               },
               {
@@ -160,7 +160,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Botpress Cloud Docs",
+                label: "Abra.AI Cloud Docs",
                 href: "https://botpress.com/docs",
               },
               {
@@ -216,7 +216,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Botpress, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Abra.AI, A.S.`,
       },
     }),
 }

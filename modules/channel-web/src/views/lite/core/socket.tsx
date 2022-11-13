@@ -26,7 +26,7 @@ export default class BpSocket {
       this.events.updateVisitorId(userId, this.userIdScope)
     }
 
-    // Connect the Botpress Web Socket to the server
+    // Connect the Abra.AI Web Socket to the server
     this.events.setup(this.userIdScope)
 
     this.events.on('guest.webchat.clear', this.onClear)

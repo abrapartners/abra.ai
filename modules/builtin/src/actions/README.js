@@ -40,7 +40,7 @@
  *
  * -- REQUIRE FILES --
  * You can require adjacent .js and .json files, simply use `require('./path_to_file.js')`.  If the adjacent file is a .js file and is not intended to be an action in itself,
- * consider prefixing the file with a dot (.) so Botpress ignores it when looking for actions.
+ * consider prefixing the file with a dot (.) so Abra.AI ignores it when looking for actions.
  *
  * -- METADATA --
  * You can change how the action will be presented in the Flow Editor by using JSDoc comments.  See example at the top of the file.

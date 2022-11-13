@@ -44,7 +44,7 @@ export interface Config {
   modelCacheSize: string
 
   /**
-   * Maximum number of concurrent trainings per Botpress instance
+   * Maximum number of concurrent trainings per Abra.AI instance
    * @default 1
    * @optional
    */

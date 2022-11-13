@@ -1,12 +1,12 @@
 # White Label
 
-## White Labeling the Botpress UI
+## White Labeling the Abra.AI UI
 
-> **Heads-up**: White-Label is a feature only available in Botpress Pro
+> **Heads-up**: White-Label is a feature only available in Abra.AI Pro
 
 ### Instructions
 
-Copy the files from the `assets` folder (next to this README file) to your Botpress Server installation's `data/assets` folder. You should end up having a structure similar to the following:
+Copy the files from the `assets` folder (next to this README file) to your Abra.AI Server installation's `data/assets` folder. You should end up having a structure similar to the following:
 
 ```
 ├── data
@@ -33,12 +33,12 @@ There are 3 different elements that can be configured independently for the stud
   "pro": {
     "branding": {
       "studio": {
-        "title": "Botpress Studio",
+        "title": "Abra.AI Studio",
         "favicon": "assets/custom/my-favicon.ico",
         "customCss": "assets/custom/custom-theme.css"
       },
       "admin": {
-        "title": "Botpress Admin Panel",
+        "title": "Abra.AI Admin Panel",
         "favicon": "assets/custom/some-icon.png",
         "customCss": "assets/custom/custom-theme-admin.css"
       }

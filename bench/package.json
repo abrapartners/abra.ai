@@ -1,9 +1,9 @@
 {
   "name": "bench",
   "version": "1.0.0",
-  "description": "Benchmark Utility for Botpress Server",
+  "description": "Benchmark Utility for Abra.AI Server",
   "main": "index.js",
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0",
   "private": true,
   "scripts": {

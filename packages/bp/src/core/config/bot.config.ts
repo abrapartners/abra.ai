@@ -91,7 +91,7 @@ export interface ConverseConfig {
    */
   bufferDelayMs: number
   /**
-   * Whether or not you want to expose public converse API. See docs here https://botpress.com/docs/channels/converse#public-api
+   * Whether or not you want to expose public converse API. See docs here https://abra.partners/docs/channels/converse#public-api
    * @default true
    */
   enableUnsecuredEndpoint: boolean
@@ -100,7 +100,7 @@ export interface ConverseConfig {
 export interface MessagingConfig {
   /**
    * Configurations of channels to be sent to the messaging server
-   * You can find more about channel configurations here : https://botpress.com/docs/channels/faq
+   * You can find more about channel configurations here : https://abra.partners/docs/channels/faq
    */
   channels: { [channelName: string]: any }
 }

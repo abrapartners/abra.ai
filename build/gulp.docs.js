@@ -10,7 +10,7 @@ const buildRef = () => {
     typedoc({
       out: './docs/reference/public',
       mode: 'file',
-      name: 'Botpress SDK',
+      name: 'Abra.AI SDK',
       readme: './docs/reference/README.md',
       theme: './build/docs/typeDocTheme',
       gaID: 'UA-90034220-1',
@@ -38,11 +38,11 @@ const alterReference = async () => {
     .html(html)
 
   $('head > title')
-    .replaceWith('<title>Chatbot Framework SDK | Botpress SDK</title>')
+    .replaceWith('<title>Chatbot Framework SDK | Abra.AI SDK</title>')
     .html(html)
 
   $('head').append(
-    '<meta name="description" content="Botpress Chatbot software development kit has all the tools you need to create your own custom chatbot.">'
+    '<meta name="description" content="Abra.AI Chatbot software development kit has all the tools you need to create your own custom chatbot.">'
   )
 
   $('meta[name="robots"]').remove()

@@ -14,7 +14,7 @@ const {
   SplashScreen
 } = ModuleUI
 
-// This view is a sample including all the features of Botpress UI
+// This view is a sample including all the features of Abra.AI UI
 export default class MyMainView extends React.Component {
   state = {
     selectedId: 1,

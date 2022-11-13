@@ -219,7 +219,7 @@ export const waitForHost = async (host: string, options?: WaitOptions) => {
         timeoutHandle = setTimeout(() => {
           clearTimeout(waitHandle)
 
-          reject(new Error(`Botpress is unreachable after trying for ${options.timeout / 1000} seconds`))
+          reject(new Error(`Abra.AI is unreachable after trying for ${options.timeout / 1000} seconds`))
         }, options.timeout)
       }
 

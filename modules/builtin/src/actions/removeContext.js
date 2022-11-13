@@ -8,7 +8,7 @@
  *
  * @title Remove Context
  * @category NLU
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {string} contexts - Comma-separated list of contextss
  */
 const removeContext = contexts => {

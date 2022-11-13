@@ -20,11 +20,11 @@ RUN chmod +x duckling && chmod +x bp
 
 RUN ./bp extract
 
-# Creates botpress user and group
+# Creates Abra.AI user and group
 RUN groupadd -g 999 $BP_GROUP && \
     useradd -m -r -u 999 -g $BP_GROUP $BP_USER
 
-# Sets ownership of the workdir to the botpress user
+# Sets ownership of the workdir to the Abra.AI user
 RUN chown -R $BP_USER:$BP_GROUP $BP_WORKDIR
 
 ENV BP_MODULE_NLU_DUCKLINGURL=http://localhost:8000

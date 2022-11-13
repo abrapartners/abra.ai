@@ -68,7 +68,7 @@ export const asyncMiddleware = (logger: Logger, routerName?: string): AsyncMiddl
  * @constructor
  * @param message - The error message that will be sent to the end-user
  * @param statusCode - The HTTP status code
- * @param errorCode - Botpress error codes e.g. BP_0001, BP_0002, etc.
+ * @param errorCode - Abra.AI error codes e.g. BP_0001, BP_0002, etc.
  */
 export class ResponseError extends Error {
   errorCode: string | undefined

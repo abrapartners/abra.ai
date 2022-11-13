@@ -3,7 +3,7 @@ import { Features } from './typings'
 export const BASE_DATA: [Partial<Features>, string][] =
   /*
   Online Helper Tool was used to generate this data
-  Top menu > Botpress > Generate JSON
+  Top menu > Abra.AI > Generate JSON
   https://docs.google.com/spreadsheets/d/1huaK8xIVFkqNAm8J6cBWCMJU3JKUXMc10xz3v521_MA/edit#gid=0 */
 
   [

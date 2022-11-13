@@ -51,7 +51,7 @@ const onBotMount = async (bp: typeof sdk, botId) => {
     return
   }
 
-  // We use process variables that are set on server start from botpress config file, we could use the configs
+  // We use process variables that are set on server start from Abra.AI config file, we could use the configs
   // const bpConfig = await bp.config.getBotpressConfig()
   // const baseCallbackUrl = bpConfig.externalUrl || `http://${bpConfig.host}:${bpConfig.port}`
   // @ts-ignore
@@ -78,7 +78,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
   definition: {
     name: 'twitter-auth',
     fullName: 'Twitter oAuth1 example',
-    homepage: 'https://botpress.com',
+    homepage: 'https://abra.partners',
     noInterface: true
   }
 }

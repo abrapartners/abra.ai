@@ -89,7 +89,7 @@ const axios = require('axios')
 /**
  * @title Call the Github API to fetch Botpress repositories
  * @category Turorial
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  **/
 const callApi = async () => {
   // We call the Github API

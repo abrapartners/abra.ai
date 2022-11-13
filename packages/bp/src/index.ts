@@ -11,7 +11,7 @@ const { Debug } = require('./debug')
 const metadataContent = require('./metadata.json')
 
 const printPlainError = err => {
-  console.error('Error starting botpress')
+  console.error('Error starting Abra.AI')
   console.error(err)
 
   if (err instanceof Error) {
@@ -108,7 +108,7 @@ try {
   require('yargs')
     .command(
       ['serve', '$0'],
-      'Start your botpress server',
+      'Start your Abra.AI server',
       {
         production: {
           alias: 'p',
@@ -118,7 +118,7 @@ try {
         },
         autoMigrate: {
           description:
-            'When this flag is set, Botpress will automatically migrate your content and configuration files when upgrading',
+            'When this flag is set, Abra.AI will automatically migrate your content and configuration files when upgrading',
           default: false,
           type: 'boolean'
         }
@@ -177,13 +177,13 @@ try {
       'Pull data from a remote server to your local file system',
       {
         url: {
-          description: 'Base URL of the botpress server from which you want to pull changes',
+          description: 'Base URL of the Abra.AI server from which you want to pull changes',
           default: 'http://localhost:3000',
           type: 'string'
         },
         authToken: {
           alias: 'token',
-          description: 'Authorization token on the remote botpress server',
+          description: 'Authorization token on the remote Abra.AI server',
           type: 'string'
         },
         targetDir: {
@@ -196,16 +196,16 @@ try {
     )
     .command(
       'push',
-      'Push local files to a remote botpress server',
+      'Push local files to a remote Abra.AI server',
       {
         url: {
-          description: 'URL of the botpress server to which to push changes',
+          description: 'URL of the Abra.AI server to which to push changes',
           default: 'http://localhost:3000',
           type: 'string'
         },
         authToken: {
           alias: 'token',
-          description: 'Authorization token on the remote botpress server',
+          description: 'Authorization token on the remote Abra.AI server',
           type: 'string'
         },
         sourceDir: {
@@ -262,7 +262,7 @@ try {
       'Run a benchmark on your bot',
       {
         url: {
-          description: 'Base URL of the botpress server you want to benchmark',
+          description: 'Base URL of the Abra.AI server you want to benchmark',
           default: 'http://localhost:3000'
         },
         botId: {

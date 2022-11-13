@@ -8,7 +8,7 @@ There are 4 different setups:
 - Community with nginx and https (you can only access the bot via nginx, 443)
 - Pro
 - Pro with nginx
-- Basic installation of botpress with docker.
+- Basic installation of Abra.AI with docker.
 
 The nginx configuration doesn't include settings for SSL termination, but those are available in the documentation.
 
@@ -25,20 +25,20 @@ Volumes are already configured and your files will be available under the folder
 
 |      Service      | Port | Directly accessible |
 | :---------------: | :--: | :-----------------: |
-|     Botpress      | 3000 |         Yes         |
+|     Abra.AI       | 3000 |         Yes         |
 |  Language Server  | 3100 |         Yes         |
 |  Duckling Server  | 8000 |         Yes         |
 | Postgres Database | 5435 |         Yes         |
 
 Command: docker-compose -f docker-compose-community.yaml up --build
 
-Open URL: http://localhost:3000
+Open URL: <http://localhost:3000>
 
 ### Community (with nginx)
 
 |      Service      | Port | Directly accessible |
 | :---------------: | :--: | :-----------------: |
-|     Botpress      | 3000 |         No          |
+|     Abra.AI       | 3000 |         No          |
 |  Language Server  | 3100 |         No          |
 |  Duckling Server  | 8000 |         No          |
 | Postgres Database | 5435 |         No          |
@@ -46,13 +46,13 @@ Open URL: http://localhost:3000
 
 Command: docker-compose -f docker-compose-community-nginx.yaml up --build
 
-Open URL: http://localhost:80
+Open URL: <http://localhost:80>
 
 ### Pro
 
 |      Service      | Port | Directly accessible |
 | :---------------: | :--: | :-----------------: |
-|     Botpress      | 3000 |         Yes         |
+|     Abra.AI       | 3000 |         Yes         |
 |  Language Server  | 3100 |         Yes         |
 |  Duckling Server  | 8000 |         Yes         |
 | Postgres Database | 5435 |         Yes         |
@@ -60,13 +60,13 @@ Open URL: http://localhost:80
 
 Command: docker-compose -f docker-compose-pro.yaml up --build
 
-Open URL: http://localhost:3000
+Open URL: <http://localhost:3000>
 
 ### Pro (with nginx)
 
 |      Service      | Port | Directly accessible |
 | :---------------: | :--: | :-----------------: |
-|     Botpress      | 3000 |         No          |
+|     Abra.AI       | 3000 |         No          |
 |  Language Server  | 3100 |         No          |
 |  Duckling Server  | 8000 |         No          |
 | Postgres Database | 5435 |         No          |
@@ -75,4 +75,4 @@ Open URL: http://localhost:3000
 
 Command: docker-compose -f docker-compose-pro-nginx.yaml up --build
 
-Open URL: http://localhost:80
+Open URL: <http://localhost:80>

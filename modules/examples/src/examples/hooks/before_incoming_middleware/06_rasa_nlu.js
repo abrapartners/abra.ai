@@ -1,5 +1,5 @@
 /**
- * This is an example of how to use Rasa NLU instead of Botpress NLU
+ * This is an example of how to use Rasa NLU instead of Abra.AI NLU
  * To enable this, remove the 'dot' before the name of this file
  */
 
@@ -15,7 +15,7 @@ async function rasaExtract() {
 	)
     if (data) {
       /** TODO Here you will need to manipulate the format of these objects
-       * so that they use the same format as Botpress NLU */
+       * so that they use the same format as Abra.AI NLU */
       event.nlu = event.nlu || {}
       //event.nlu.intents = data.intent_ranking;
       event.nlu.intent = {};

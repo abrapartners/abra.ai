@@ -24,7 +24,7 @@ const LoginContainer: FC<Props> = props => {
             <div className={cx('card_body', 'login_box', style.card_body, style.login_box)}>
               <div>
                 <div className={cx('card_title', style.card_title)}>
-                  <strong>{props.title || 'Botpress'}</strong>
+                  <strong>{props.title || 'Abra.AI'}</strong>
                 </div>
 
                 <div className={cx('card_text', style.card_text)}>{props.subtitle || ''}</div>
@@ -37,7 +37,7 @@ const LoginContainer: FC<Props> = props => {
           {props.poweredBy && (
             <div className={cx('homepage', style.homepage)}>
               <p>
-                {lang.tr('admin.poweredBy')} <a href="https://botpress.com">Botpress</a>
+                {lang.tr('admin.poweredBy')} <a href="https://abra.partners">Abra.AI</a>
               </p>
             </div>
           )}

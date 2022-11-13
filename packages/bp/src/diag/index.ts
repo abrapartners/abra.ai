@@ -120,7 +120,7 @@ const printModulesConfig = async (botId?: string) => {
 
 const printGeneralInfos = async () => {
   printHeader('General')
-  printRow('Botpress Version', process.BOTPRESS_VERSION)
+  printRow('Abra.AI Version', process.BOTPRESS_VERSION)
   printRow('Node Version', process.version.substr(1))
   printRow('NLU Version', await getToolVersion('nlu'))
   printRow('Studio Version', await getToolVersion('studio'))
@@ -180,7 +180,7 @@ const testConnectivity = async () => {
     // @ts-ignore typing missing for that method
     const reply = await redisClient.pubsub(['NUMSUB', makeRedisKey('job_done')])
     process.env.BP_REDIS_SCOPE && printRow('Redis using scope', process.env.BP_REDIS_SCOPE)
-    printRow('Botpress nodes listening on Redis', reply[1])
+    printRow('Abra.AI nodes listening on Redis', reply[1])
   } catch (err) {}
 
   try {
@@ -326,7 +326,7 @@ const listEnvironmentVariables = () => {
 }
 
 const printConfig = async () => {
-  printHeader('Botpress Config')
+  printHeader('Abra.AI Config')
   printObject(botpressConfig, includePasswords)
 
   printHeader('Module Configuration')

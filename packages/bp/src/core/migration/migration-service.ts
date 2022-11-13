@@ -94,7 +94,7 @@ export class MigrationService {
 
     if (!process.AUTO_MIGRATE) {
       this.logger.error(
-        'Botpress needs to migrate your data. Please make a copy of your data, then start it with "./bp --auto-migrate"'
+        'Abra.AI needs to migrate your data. Please make a copy of your data, then start it with "./bp --auto-migrate"'
       )
 
       // When failsafe is enabled, simply stop executing migrations
@@ -176,7 +176,7 @@ export class MigrationService {
       created_at: new Date()
     }
 
-    // srv_migrations tracks migration of botpress config, while srv_metadata is for the database
+    // srv_migrations tracks migration of Abra.AI config, while srv_metadata is for the database
     try {
       await this.database
         .knex('srv_migrations')
@@ -206,7 +206,7 @@ ${_.repeat(' ', 9)}========================================`)
 
     let hasFailures = false
 
-    // Clear the Botpress cache before executing any migrations
+    // Clear the Abra.AI cache before executing any migrations
     try {
       const cachePath = path.join(process.APP_DATA_PATH, 'cache')
       if (process.APP_DATA_PATH && fse.pathExistsSync(cachePath)) {
@@ -241,7 +241,7 @@ ${_.repeat(' ', 9)}========================================`)
 
     if (hasFailures) {
       this.logger.error(
-        `${logPrefix}Some steps failed to complete. Please fix errors manually, then restart Botpress so the update process may finish.`
+        `${logPrefix}Some steps failed to complete. Please fix errors manually, then restart Abra.AI so the update process may finish.`
       )
 
       if (!process.IS_FAILSAFE) {

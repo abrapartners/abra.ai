@@ -9,7 +9,7 @@ async function getVisitorId(userId) {
  * Update user language
  * @title Update user language
  * @category Language
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {string} lang - The language code, e.g. "en"
  */
 const switchLanguage = async language => {

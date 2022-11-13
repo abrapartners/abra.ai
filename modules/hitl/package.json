@@ -3,7 +3,7 @@
   "fullName": "Human In The Loop",
   "version": "1.0.0",
   "status": "stable",
-  "description": "Provides an interface for a Botpress user to take over conversations with chat users",
+  "description": "Provides an interface for a Abra.AI user to take over conversations with chat users",
   "private": true,
   "main": "dist/backend/index.js",
   "botpress": {
@@ -13,14 +13,14 @@
   "keywords": [
     "hitl",
     "human in the loop",
-    "botpress"
+    "abra.ai"
   ],
   "scripts": {
     "build": "node ../../build/module-builder/bin/entry build",
     "watch": "node ../../build/module-builder/bin/entry watch",
     "package": "node ../../build/module-builder/bin/entry package"
   },
-  "author": "Botpress",
+  "author": "Abra.AI",
   "license": "AGPL-3.0-only",
   "devDependencies": {
     "@types/react-bootstrap": "^0.32.19"

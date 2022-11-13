@@ -6,7 +6,7 @@
   "description": "Provides high level analytics about your bot's usage",
   "private": true,
   "main": "dist/backend/index.js",
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0-only",
   "scripts": {
     "build": "node ../../build/module-builder/bin/entry build",

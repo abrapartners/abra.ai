@@ -11,7 +11,7 @@
     "watch": "node ../../build/module-builder/bin/entry watch",
     "package": "node ../../build/module-builder/bin/entry package"
   },
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0-only",
   "devDependencies": {
     "@types/apicache": "^1.2.2",

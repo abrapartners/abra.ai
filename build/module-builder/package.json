@@ -2,9 +2,9 @@
   "name": "@botpress/module-builder",
   "version": "1.0.0",
   "bin": "bin/entry.js",
-  "description": "A module that facilitates creation and development of Botpress modules",
+  "description": "A module that facilitates creation and development of Abra.AI modules",
   "main": "index.js",
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0-only",
   "private": true,
   "scripts": {

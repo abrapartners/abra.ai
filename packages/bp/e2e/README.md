@@ -1,15 +1,15 @@
-## Botpress E2E tests
+## Abra.AI E2E tests
 
 ### Prerequisites
 
-- A binary or source code version of Botpress running (preferably with an empty `data` folder)
+- A binary or source code version of Abra.AI running (preferably with an empty `data` folder)
 - _(Optional)_ A license key (`BP_LICENSE_KEY` and `BP_CONFIG_PRO_ENABLED`) to run tests on the Pro version
 
 ### Setup
 
 Go to `assets/config.ts` and make sure that the config fits your needs. You can also edit `Puppeteer` configurations in this file: `jest-puppeteer.config.js` if needed.
 
-It is highly recommended to use a `.env` file for your environment variables as it will allow you to easily restart your server and delete the `data` folder without loosing your Botpress configurations.
+It is highly recommended to use a `.env` file for your environment variables as it will allow you to easily restart your server and delete the `data` folder without loosing your Abra.AI configurations.
 
 The entrypoint to the tests is the `all.test.ts` file. Edit this file to only run certain tests.
 
@@ -33,7 +33,7 @@ To execute **all** the tests:
 BP_CONFIG_PRO_ENABLED=true yarn test:e2e
 ```
 
-| Note that when adding `BP_CONFIG_PRO_ENABLED` you also need to start Botpress using the Pro version
+| Note that when adding `BP_CONFIG_PRO_ENABLED` you also need to start Abra.AI using the Pro version
 
 To **hide all the console logs** when running tests:
 

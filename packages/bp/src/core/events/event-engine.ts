@@ -267,7 +267,7 @@ export class EventEngine {
 
     const result = joi.validate(event, eventSchema)
     if (result.error) {
-      throw new VError(result.error, 'Invalid Botpress Event')
+      throw new VError(result.error, 'Invalid Abra.AI Event')
     }
   }
 
@@ -281,7 +281,7 @@ export class EventEngine {
       await sendText(`Version: ${process.BOTPRESS_VERSION}`)
     } else if (event.preview === 'BP_LICENSE') {
       await sendText(
-        `**Botpress Pro**
+        `**Abra.AI Pro**
 Available: ${process.IS_PRO_AVAILABLE}
 Enabled: ${process.IS_PRO_ENABLED}
 Licensed: ${process.IS_LICENSED}`

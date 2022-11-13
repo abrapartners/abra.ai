@@ -132,7 +132,7 @@ yargs
         'Setup a new workspace',
         {
           pro: {
-            description: 'Includes Botpress Pro in the workspace',
+            description: 'Includes Abra.AI Pro in the workspace',
             type: 'boolean',
             default: false
           }

@@ -13,7 +13,7 @@ if (process.pkg) {
   // Modules will be picked from this location first
   lookupPaths.push(path.dirname(process.execPath) + '/data/modules')
 
-  // Running botpress in packages mode
+  // Running Abra.AI in packages mode
   lookupPaths.push(path.dirname(process.execPath) + '/modules')
 }
 

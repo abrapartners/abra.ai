@@ -122,7 +122,7 @@ export const cleanFiles = async (storageLocation: string) => {
   try {
     const folder = path.resolve(storageLocation, 'tools')
     await Promise.fromCallback(cb => rimraf(folder, cb))
-    logger.info('Botpress Tools successfully removed')
+    logger.info('Abra.AI Tools successfully removed')
   } catch (err) {
     logger.error(`Couldn't clean files ${err}`)
   }

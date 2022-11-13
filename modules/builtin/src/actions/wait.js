@@ -3,7 +3,7 @@
  *
  * @title Wait/Delay
  * @category Utility
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {number} delay=1000 - The number of milliseconds to wait
  */
 const wait = async delay => {

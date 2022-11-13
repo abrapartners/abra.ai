@@ -3,6 +3,7 @@ import lang from 'common/lang'
 import en from '../translations/en.json'
 import es from '../translations/es.json'
 import fr from '../translations/fr.json'
+// import tr from '../translations/tr.json'
 
 const defaultLocale = 'en'
 const translations = { fr, en, es }

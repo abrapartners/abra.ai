@@ -435,7 +435,7 @@ class RootStore {
     this.view.disableAnimations = this.config.disableAnimations
     this.config.showPoweredBy ? this.view.showPoweredBy() : this.view.hidePoweredBy()
 
-    document.title = this.config.botName || 'Botpress Webchat'
+    document.title = this.config.botName || 'Abra.AI Webchat'
 
     this.api.updateAxiosConfig({ botId: this.config.botId, externalAuthToken: this.config.externalAuthToken })
 

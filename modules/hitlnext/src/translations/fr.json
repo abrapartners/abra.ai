@@ -77,7 +77,7 @@
   },
   "sidebar": {
     "tab": "Escalations",
-    "access": "Accéder aux Escalations Botpress",
+    "access": "Accéder aux Escalations Abra.AI",
     "agents": {
       "heading": "Agents Connectés",
       "empty": "Il n'y a aucun agent connecté actuellement"

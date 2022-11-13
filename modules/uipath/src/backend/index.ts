@@ -13,7 +13,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
     menuText: 'UiPath',
     noInterface: true,
     fullName: 'UiPath',
-    homepage: 'https://botpress.com',
+    homepage: 'https://abra.partners',
     experimental: true
   }
 }

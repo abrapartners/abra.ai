@@ -3,10 +3,10 @@
   "fullName": "UI Path",
   "version": "1.0.0",
   "status": "stable",
-  "description": "UiPath integration for Botpress",
+  "description": "UiPath integration for Abra.AI",
   "private": true,
   "main": "dist/backend/index.js",
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0-only",
   "scripts": {
     "build": "node ../../build/module-builder/bin/entry build",

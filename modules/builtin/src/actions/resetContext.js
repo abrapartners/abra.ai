@@ -5,7 +5,7 @@
  *
  * @title Reset Context
  * @category NLU
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  */
 const resetContext = () => {
   event.state.session.nluContexts = []

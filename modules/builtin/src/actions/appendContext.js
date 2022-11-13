@@ -16,7 +16,7 @@ const _ = require('lodash')
  *
  * @title Append Context
  * @category NLU
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {string} contexts - Comma-separated list of contexts
  * @param {string} [ttl=1] - Time-To-Live of the context in number of dialog turns. Put `0` to disable expiry.
  */

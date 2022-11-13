@@ -295,7 +295,7 @@ export class ModuleLoader {
     await AppLifecycle.waitFor(AppLifecycleEvents.HTTP_SERVER_READY)
 
     // Once all the modules have been loaded, we tell them it's ready
-    // TODO We probably want to wait until Botpress is done loading the other services etc
+    // TODO We probably want to wait until Abra.AI is done loading the other services etc
     for (const module of modules) {
       const name = module.definition.name.toLowerCase()
       if (!initedModules[name]) {

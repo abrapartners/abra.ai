@@ -14,7 +14,7 @@ function* amendFiles(yarnInstall: boolean) {
   let count = 0
   for (const file of files) {
     const content = fse.readJsonSync(file)
-    if (content && content.author && content.author.toLowerCase().includes('botpress')) {
+    if (content && content.author && content.author.toLowerCase().includes('abra.ai')) {
       let save = false
       const saveFn = () => (save = true)
       yield [content, file, saveFn]

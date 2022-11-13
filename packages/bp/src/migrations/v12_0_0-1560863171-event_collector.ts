@@ -3,7 +3,7 @@ import { Migration, MigrationOpts } from 'core/migration'
 
 const migration: Migration = {
   info: {
-    description: 'Adding eventCollector configuration to Botpress Config',
+    description: 'Adding eventCollector configuration to Abra.AI Config',
     type: 'config'
   },
   up: async ({ configProvider }: MigrationOpts): Promise<sdk.MigrationResult> => {

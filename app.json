@@ -10,7 +10,7 @@
   },
   "env": {
     "BPFS_STORAGE": {
-      "description": "Tells botpress to use an external database (postgres). Should be left as is.",
+      "description": "Tells Abra.AI to use an external database (postgres). Should be left as is.",
       "value": "database"
     },
     "PGSSLMODE": {
@@ -19,7 +19,7 @@
     }
   },
   "success_url": "/",
-  "website": "https://botpress.com/",
+  "website": "https://abra.partners/",
   "stack": "container",
   "addons": ["heroku-postgresql"]
 }

@@ -17,7 +17,7 @@
     "watch": "node ../../build/module-builder/bin/entry watch",
     "package": "node ../../build/module-builder/bin/entry package"
   },
-  "author": "Botpress Team",
+  "author": "Abra.AI Team",
   "license": "AGPL-3.0-only",
   "devDependencies": {
     "@babel/helpers": "^7.4.3",

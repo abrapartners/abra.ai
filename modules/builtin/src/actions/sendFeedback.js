@@ -3,7 +3,7 @@
  *
  * @title Send Feedback
  * @category NDU
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {number} [value] - The feedback value. Use 1 for positive feedback, -1 for negative feedback
  */
 

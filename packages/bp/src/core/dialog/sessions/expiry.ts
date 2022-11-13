@@ -11,10 +11,10 @@ export interface DialogExpiry {
 
 /**
  * Create expiry dates for dialog session and dialog context based on the bot configuration.
- * If no configuration is found for the bot, it will fallback to botpress config.
+ * If no configuration is found for the bot, it will fallback to Abra.AI config.
  *
  * @param botConfig The bot configuration file i.e. bot.config.json
- * @param botpressConfig Botpress configuration file i.e. botpress.config.json
+ * @param botpressConfig Abra.AI configuration file i.e. botpress.config.json
  */
 export function createExpiry(botConfig: BotConfig, botpressConfig: BotpressConfig): DialogExpiry {
   const contextTimeout = ms(_.get(botConfig, 'dialog.timeoutInterval', botpressConfig.dialog.timeoutInterval))

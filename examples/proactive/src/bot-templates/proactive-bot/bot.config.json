@@ -7,7 +7,7 @@
   "description": "An example bot to demonstrate proactive messages",
   "active": true,
   "version": "1.0.0",
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0",
   "imports": {
     "modules": [],

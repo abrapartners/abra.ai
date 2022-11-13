@@ -16,7 +16,7 @@ You can apply filters to the broadcasts. Filters are small JavaScript functions 
 
 Variables exposed to the filter function:
 
-- `bp` botpress instance
+- `bp` Abra.AI instance
 - `userId` the userId to send the message to
 - `channel` the channel on which the user is on
 
@@ -32,7 +32,7 @@ The function needs to return a **boolean** or a **Promise of a boolean**.
 channel === 'facebook'
 ```
 
-##### Use the botpress SDK to check the kvs
+##### Use the Abra.AI SDK to check the kvs
 
 ```js
 bp.kvs.forBot('botName').get('keyName') === 'keyValue'

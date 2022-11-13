@@ -4,7 +4,7 @@ const axios = require('axios')
  * Gets current weather
  * @title Get Weather
  * @category Weather
- * @author Botpress
+ * @author Abra.AI
  */
 const myAction = async () => {
   const config = await bp.config.getModuleConfig('examples')

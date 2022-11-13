@@ -27,7 +27,7 @@ class WorkspacesRouter extends CustomAdminRouter {
       '/',
       this.asyncMiddleware(async (req, res) => {
         if (!process.IS_PRO_ENABLED) {
-          throw new InvalidOperationError('Botpress Pro must be enabled')
+          throw new InvalidOperationError('Abra.AI Pro must be enabled')
         }
 
         const { value, error } = Joi.validate(req.body, WorkspaceCreationSchema)

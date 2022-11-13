@@ -7,7 +7,7 @@
   "description": "Gets the current weather for a given city",
   "active": true,
   "version": "12.1.3",
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0",
   "imports": {
     "modules": [],

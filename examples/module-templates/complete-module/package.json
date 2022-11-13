@@ -4,7 +4,7 @@
   "description": "Some description on what this module is about",
   "private": true,
   "main": "dist/backend/index.js",
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0-only",
   "scripts": {
     "build": "node ../../build/module-builder/bin/entry build",

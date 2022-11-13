@@ -29,7 +29,7 @@ const entryPoint: sdk.ModuleEntryPoint = {
   definition: {
     name: 'channel-web',
     fullName: 'Web Chat',
-    homepage: 'https://botpress.com',
+    homepage: 'https://abra.partners',
     noInterface: true,
     plugins: [{ entry: 'WebBotpressUIInjection', position: 'overlay' }]
   }

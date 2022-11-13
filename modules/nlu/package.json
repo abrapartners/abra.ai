@@ -12,7 +12,7 @@
     "package": "node ../../build/module-builder/bin/entry package",
     "postinstall": "./node_modules/.bin/rimraf **/bmp-stuff.png"
   },
-  "author": "Botpress, Inc.",
+  "author": "Abra.AI, A.S.",
   "license": "AGPL-3.0-only",
   "devDependencies": {
     "@types/bluebird-retry": "^0.11.4",

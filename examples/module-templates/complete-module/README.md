@@ -1,7 +1,7 @@
 ## Overview
 
 This example includes a lot of "boilerplate" to create a module with almost all features you can implement from the documentation
-Please check the [official documentation](https://botpress.com/docs/developers/create-module/) for more information
+Please check the [official documentation](https://abra.partners/docs/developers/create-module/) for more information
 
 ## Quick Start
 
@@ -21,11 +21,11 @@ Please check the [official documentation](https://botpress.com/docs/developers/c
 }
 ```
 
-4. Start Botpress: `yarn start`
+4. Start Abra.AI: `yarn start`
 5. Choose any bots in your workspace, then you should see the module in the sidebar !
 
 ## Continuous Development
 
-When you make changes to any portion of your module, you need to build it and restart Botpress.
+When you make changes to any portion of your module, you need to build it and restart Abra.AI.
 
-You can type `yarn watch` which will save you some time, since every time you make a change, the source will be compiled immediately. You will only have to restart Botpress.
+You can type `yarn watch` which will save you some time, since every time you make a change, the source will be compiled immediately. You will only have to restart Abra.AI.

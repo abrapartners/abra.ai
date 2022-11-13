@@ -7,7 +7,7 @@ const INTENT_PREFIX = 'intent:'
  * @title Validate user choice
  * @category Skills
  * @hidden true
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {string} data - The parameters of the available choices
  */
 const validateChoice = async data => {

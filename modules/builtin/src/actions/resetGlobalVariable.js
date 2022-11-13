@@ -2,7 +2,7 @@
  * Reset a variable globally
  * @title Reset global variable
  * @category Storage
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {string} name - The name of the variable
  */
 const resetGlobalVariable = async name => {

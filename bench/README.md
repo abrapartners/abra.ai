@@ -1,8 +1,8 @@
-# Botpress Benchmark
+# Abra.AI Benchmark
 
-##How to run
+## How to run
 
-Botpress has to be running
+Abra.AI has to be running
 
 ```
 yarn

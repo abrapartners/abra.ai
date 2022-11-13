@@ -2,7 +2,7 @@
  * Get a variable globally
  * @title Get global variable
  * @category Storage
- * @author Botpress, Inc.
+ * @author Abra.AI, A.S.
  * @param {string} name - The name of the variable
  * @param {string} output - The state variable to ouput to
  */
